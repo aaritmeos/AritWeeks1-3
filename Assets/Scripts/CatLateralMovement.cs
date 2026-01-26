@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class CatLateralMovement : MonoBehaviour
     
 {
+    //created float height to personalize height of the cat in the screen
     public float height;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class CatLateralMovement : MonoBehaviour
 
         //assign the x value of the mouse to the x value in the transform of the Game Object
         newPos.x = mousePos.x;
+        //assigned y of new Pos to height to change it from the inspector
         newPos.y = height;
 
         //reassign mousePos to the transform
