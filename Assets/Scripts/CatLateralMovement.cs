@@ -16,18 +16,18 @@ public class CatLateralMovement : MonoBehaviour
     void Update()
     {
         //create Vector that allows us to modify the values of the transform
-        Vector2 newPos = transform.position;
+        Vector2 catPos = transform.position;
 
         //create vector to store mouse position in game world
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         //assign the x value of the mouse to the x value in the transform of the Game Object
-        newPos.x = mousePos.x;
+        catPos.x = mousePos.x;
         //assigned y of new Pos to height to change it from the inspector
-        newPos.y = height;
+        catPos.y = height;
 
         //reassign mousePos to the transform
-        transform.position = newPos;
+        transform.position = catPos;
         
     }
 }
